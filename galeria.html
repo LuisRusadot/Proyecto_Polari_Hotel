@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Polaris — Galería Estelar</title>
+    <meta name="description" content="Explora 12 experiencias visuales del Hotel Polaris: Terraza Observatorio, Suites, Spa Nocturno, Tours de Astrofotografía y más.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body class="subpage">
+
+    <nav class="navbar">
+        <div class="navbar-pill" id="navbar-pill">
+            <a href="index.html" class="logo-ring" aria-label="Hotel Polaris">
+                <span class="logo-dot">HP</span>
+            </a>
+            <span class="nav-divider"></span>
+            <a href="index.html" class="nav-link">Inicio</a>
+            <a href="experiencias.html" class="nav-link">Experiencias</a>
+            <a href="galeria.html" class="nav-link active">Galería</a>
+            <a href="contacto.html" class="nav-link">Contacto</a>
+            <span class="nav-divider"></span>
+            <a href="contacto.html" class="nav-cta">
+                <span class="nav-cta-ring accent-gradient"></span>
+                <span class="nav-cta-content">Reservar ↗</span>
+            </a>
+        </div>
+    </nav>
+
+    <main id="app">
+        <!-- HERO DE SUBPÁGINA -->
+        <section class="page-hero">
+            <div class="page-hero-bg sitio-galeria"></div>
+            <div class="hero-overlay"></div>
+            <div class="page-hero-content">
+                <p class="eyebrow blur-in">Galería</p>
+                <h1 class="page-hero-title name-reveal">Galería <em class="font-display text-gold">Estelar</em></h1>
+                <p class="hero-desc blur-in">Explora 12 experiencias visuales que te pueden proporcionar nuestros servicios.</p>
+            </div>
+        </section>
+
+        <!-- CARRUSEL -->
+        <section class="subpage-section">
+            <div class="container">
+                <div class="section-header">
+                    <div class="eyebrow-row">
+                        <span class="eyebrow-line"></span>
+                        <span class="eyebrow-label">Recorrido visual</span>
+                    </div>
+                    <div class="section-header-row">
+                        <h2 class="section-title">Un vistazo <em class="font-display text-gold">bajo las estrellas</em></h2>
+                    </div>
+                    <p class="section-subtext">Cada imagen captura la esencia de una estadía en Hotel Polaris.</p>
+                </div>
+
+                <div class="carrusel-container">
+                    <button class="carrusel-btn prev-btn" id="prevBtn" aria-label="Anterior">&#10094;</button>
+                    <button class="carrusel-btn next-btn" id="nextBtn" aria-label="Siguiente">&#10095;</button>
+
+                    <div class="carrusel-track" id="carruselTrack">
+
+                        <figure class="carrusel-slide">
+                            <div class="gallery-img-wrapper">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeQyK-LIkpEmG-H6E3ta5Aa5XNDs6QXtsDWND4Aq_L1fUcHOwbyoklOCw&s=10" alt="Terraza Observatorio">
+                                <figcaption class="image-overlay">
+                                    <h3 class="overlay-title">Terraza Observatorio</h3>
+                                    <p class="overlay-desc">Avistamiento de constelaciones con telescopios profesionales.</p>
+                                </figcaption>
+                            </div>
+                        </figure>
+
+                        <figure class="carrusel-slide">
+                            <div class="gallery-img-wrapper">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJe7XIAqItVTgX0Ki6f5WQWEf9DQ1mX1wXKDmf1luy2gjO7s5UulwiFKnF&s=10" alt="Suite Observatorio">
+                                <figcaption class="image-overlay">
+                                    <h3 class="overlay-title">Suite Observatorio</h3>
+                                    <p class="overlay-desc">Vistas al firmamento desde la comodidad de tu cama.</p>
+                                </figcaption>
+                            </div>
+                        </figure>
+
+                        <figure class="carrusel-slide">
+                            <div class="gallery-img-wrapper">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6qUfOr4UStCQ-OgxRa1BnCixQ6st7C-_KzRsfXcn15NETtQOq9XSqxA0&s=10" alt="Bar Constelación">
+                                <figcaption class="image-overlay">
+                                    <h3 class="overlay-title">Bar Constelación</h3>
+                                    <p class="overlay-desc">Coctelería de autor inspirada en la astrofísica.</p>
+                                </figcaption>
+                            </div>
+                        </figure>
+
+                        <figure class="carrusel-slide">
+                            <div class="gallery-img-wrapper">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQI-9BVDG67YSbpWOmbzPcdhSN6faeiomURds-GIWqug&s=10" alt="Spa Nocturno">
+                                <figcaption class="image-overlay">
+                                    <h3 class="overlay-title">Spa Nocturno</h3>
+                                    <p class="overlay-desc">Hidromasaje y relajación bajo el cielo despejado.</p>
+                                </figcaption>
+                            </div>
+                        </figure>
+
+                        <figure class="carrusel-slide">
+                            <div class="gallery-img-wrapper">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThjP_E8y6bkoIH9vdb89htjT1K5YU7r9V171ZPzPu3Yk3m0-dDX6CilDXd&s=10" alt="Cena Estelar">
+                                <figcaption class="image-overlay">
+                                    <h3 class="overlay-title">Cenas Románticas</h3>
+                                    <p class="overlay-desc">Gastronomía privada al aire libre para dos.</p>
+                                </figcaption>
+                            </div>
+                        </figure>
+
+                        <figure class="carrusel-slide">
+                            <div class="gallery-img-wrapper">
+                                <img src="https://media-cdn.tripadvisor.com/media/photo-s/2a/c9/99/53/caption.jpg" alt="Arquitectura Exterior">
+                                <figcaption class="image-overlay">
+                                    <h3 class="overlay-title">Diseño Sostenible</h3>
+                                    <p class="overlay-desc">Arquitectura con baja contaminación lumínica.</p>
+                                </figcaption>
+                            </div>
+                        </figure>
+
+                        <figure class="carrusel-slide">
+                            <div class="gallery-img-wrapper">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScW46JEIvlwYKGaIZ8m6i9rLbn3hnWu4FyBH7E_mlQ2Sex3EEimZeBcsR_&s=10" alt="Suite Nórdica">
+                                <figcaption class="image-overlay">
+                                    <h3 class="overlay-title">Suite Nórdica</h3>
+                                    <p class="overlay-desc">Diseño cálido y ventanales orientados al norte.</p>
+                                </figcaption>
+                            </div>
+                        </figure>
+
+                        <figure class="carrusel-slide">
+                            <div class="gallery-img-wrapper">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBhTRqBB8MrgqppvnxWUm0tUpTgpK-oL1UdM9tP9SE1Q&s=10" alt="Tours de Astrofotografía">
+                                <figcaption class="image-overlay">
+                                    <h3 class="overlay-title">Tours de Astrofotografía</h3>
+                                    <p class="overlay-desc">Captura la Vía Láctea guiado por expertos.</p>
+                                </figcaption>
+                            </div>
+                        </figure>
+
+                        <figure class="carrusel-slide">
+                            <div class="gallery-img-wrapper">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtsh3aEYc2kaQpCB3wcLcir8-_wogIBoEHGWrAOhM8nA&s=10" alt="Bodas Bajo las Estrellas">
+                                <figcaption class="image-overlay">
+                                    <h3 class="overlay-title">Bodas y Eventos</h3>
+                                    <p class="overlay-desc">Celebraciones únicas en entornos naturales.</p>
+                                </figcaption>
+                            </div>
+                        </figure>
+
+                        <figure class="carrusel-slide">
+                            <div class="gallery-img-wrapper">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgLsY_hqVhTdEPIHQ-36myQIkVDAo9lPeOqP8s8FX5YA&s=10" alt="Lobby Estelar">
+                                <figcaption class="image-overlay">
+                                    <h3 class="overlay-title">Lobby de Bienvenida</h3>
+                                    <p class="overlay-desc">Atención personalizada y detalles astronómicos.</p>
+                                </figcaption>
+                            </div>
+                        </figure>
+
+                        <figure class="carrusel-slide">
+                            <div class="gallery-img-wrapper">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-bfQqEobykib7E0cqdZtZFDWyVeeF0pmXaXBGNzBnpEv8u5pjS_Dbc2h8&s=10" alt="Jardines Nocturnos">
+                                <figcaption class="image-overlay">
+                                    <h3 class="overlay-title">Jardines Nocturnos</h3>
+                                    <p class="overlay-desc">Senderos suavemente iluminados para caminar de noche.</p>
+                                </figcaption>
+                            </div>
+                        </figure>
+
+                        <figure class="carrusel-slide">
+                            <div class="gallery-img-wrapper">
+                                <img src="https://visitarmedellin.com/wp-content/uploads/2023/06/Mirador-Belen.png" alt="Mirador Polaris">
+                                <figcaption class="image-overlay">
+                                    <h3 class="overlay-title">Mirador Polaris</h3>
+                                    <p class="overlay-desc">El punto más alto para una orientación perfecta.</p>
+                                </figcaption>
+                            </div>
+                        </figure>
+
+                    </div>
+
+                    <div class="carrusel-dots" id="carruselDots"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="subpage-cta">
+            <div class="container text-center">
+                <h2 class="section-title">¿Quieres vivirlo <em class="font-display text-gold">en persona</em>?</h2>
+                <p class="section-subtext" style="margin: 1rem auto 2rem;">Reserva tu estancia y contempla el firmamento con tus propios ojos.</p>
+                <a href="contacto.html" class="btn-solid btn-lg">
+                    <span class="btn-ring accent-gradient"></span>
+                    <span class="btn-content">Reservar Ahora</span>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer subpage-footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <h3>Hotel Polaris</h3>
+                <p>Tu Próximo Destino</p>
+            </div>
+            <div class="footer-links">
+                <a href="index.html">Inicio</a>
+                <a href="experiencias.html">Experiencias</a>
+                <a href="galeria.html">Galería</a>
+                <a href="contacto.html">Contacto</a>
+            </div>
+            <div class="footer-status">
+                <span class="status-dot"></span>
+                <span>Aceptando reservas</span>
+            </div>
+            <div class="footer-copy">&copy; 2026 Hotel Polaris. Todos los derechos reservados.</div>
+        </div>
+    </footer>
+
+    <script type="module" src="main.js"></script>
+</body>
+</html>

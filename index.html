@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Polaris — Tu próximo destino bajo las estrellas</title>
+    <meta name="description" content="Hotel Polaris: un refugio de lujo, confort y distinción para la desconexión total en un entorno astronómico privilegiado.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+    <div id="loading-screen">
+        <span class="loading-label">Hotel Polaris</span>
+        <div class="loading-word-wrap">
+            <span id="loading-word">Lujo</span>
+        </div>
+        <span class="loading-counter" id="loading-counter">000</span>
+        <div class="loading-bar"><div class="accent-gradient loading-fill" id="loading-fill"></div></div>
+    </div>
+
+    <main id="app" hidden>
+
+        <!-- ================= HERO ================= -->
+        <section id="hero">
+            <video id="hero-video" autoplay muted loop playsinline></video>
+            <div class="hero-overlay"></div>
+            <div class="hero-bottom-fade"></div>
+
+            <nav class="navbar">
+                <div class="navbar-pill" id="navbar-pill">
+                    <a href="index.html" class="logo-ring" aria-label="Hotel Polaris">
+                        <span class="logo-dot">HP</span>
+                    </a>
+                    <span class="nav-divider"></span>
+                    <a href="index.html" class="nav-link active">Inicio</a>
+                    <a href="experiencias.html" class="nav-link">Experiencias</a>
+                    <a href="galeria.html" class="nav-link">Galería</a>
+                    <a href="contacto.html" class="nav-link">Contacto</a>
+                    <span class="nav-divider"></span>
+                    <a href="contacto.html" class="nav-cta">
+                        <span class="nav-cta-ring accent-gradient"></span>
+                        <span class="nav-cta-content">Reservar ↗</span>
+                    </a>
+                </div>
+            </nav>
+
+            <div class="hero-content">
+                <p class="eyebrow blur-in">Cielos Oscuros Certificados</p>
+                <h1 class="name name-reveal">Hotel Polaris</h1>
+                <p class="hero-role">Tu <span id="role-word" class="animate-role-fade-in">Descanso</span> bajo las estrellas.</p>
+                <p class="hero-desc blur-in">Un refugio de lujo, confort y distinción diseñado para guiarte hacia la desconexión total en un entorno astronómico privilegiado, protegido contra la contaminación lumínica.</p>
+                <div class="hero-ctas">
+                    <a href="experiencias.html" class="btn-solid">
+                        <span class="btn-ring accent-gradient"></span>
+                        <span class="btn-content">Ver Experiencias</span>
+                    </a>
+                    <a href="contacto.html" class="btn-outline">
+                        <span class="btn-ring accent-gradient"></span>
+                        <span class="btn-content">Reservar Ahora</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="scroll-indicator">
+                <span>SCROLL</span>
+                <div class="scroll-line"><div class="scroll-line-inner animate-scroll-down"></div></div>
+            </div>
+        </section>
+
+        <!-- ================= EXPERIENCIAS ================= -->
+        <section id="experiencias">
+            <div class="container">
+                <div class="section-header experiencias-header">
+                    <div class="eyebrow-row">
+                        <span class="eyebrow-line"></span>
+                        <span class="eyebrow-label">Experiencias</span>
+                    </div>
+                    <div class="section-header-row">
+                        <h2 class="section-title">Servicios <em class="font-display text-gold">destacados</em></h2>
+                        <a href="experiencias.html" class="btn-view-all">
+                            <span class="btn-ring accent-gradient"></span>
+                            <span class="btn-content">Ver todos →</span>
+                        </a>
+                    </div>
+                    <p class="section-subtext">Una selección de experiencias diseñadas para contemplar el firmamento desde el lujo absoluto.</p>
+                </div>
+
+                <div class="bento-grid">
+                    <article class="service-card card-span-7">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAEZ910METY4TxBxUEAn4qpecTHz0YdsPScCkxqAQODQ&s" alt="Suites Observatorio">
+                        <div class="halftone"></div>
+                        <div class="card-scrim">
+                            <span class="card-label">
+                                <span class="card-label-ring accent-gradient"></span>
+                                <span class="card-label-content">Ver — <em class="font-display">Suites Observatorio</em></span>
+                            </span>
+                        </div>
+                    </article>
+                    <article class="service-card card-span-5">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeQyK-LIkpEmG-H6E3ta5Aa5XNDs6QXtsDWND4Aq_L1fUcHOwbyoklOCw&s=10" alt="Terraza Observatorio">
+                        <div class="halftone"></div>
+                        <div class="card-scrim">
+                            <span class="card-label">
+                                <span class="card-label-ring accent-gradient"></span>
+                                <span class="card-label-content">Ver — <em class="font-display">Terraza & Telescopios</em></span>
+                            </span>
+                        </div>
+                    </article>
+                    <article class="service-card card-span-5">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRo_-tANFW16oAkqneIvwiqYmmwdnLMlo0hlCwxuI7TBA&s=10" alt="Spa Nocturno">
+                        <div class="halftone"></div>
+                        <div class="card-scrim">
+                            <span class="card-label">
+                                <span class="card-label-ring accent-gradient"></span>
+                                <span class="card-label-content">Ver — <em class="font-display">Spa & Círculo Térmico</em></span>
+                            </span>
+                        </div>
+                    </article>
+                    <article class="service-card card-span-7">
+                        <img src="https://media.tacdn.com/media/attractions-splice-spp-674x446/0b/17/4e/a0.jpg" alt="Tours Astronómicos">
+                        <div class="halftone"></div>
+                        <div class="card-scrim">
+                            <span class="card-label">
+                                <span class="card-label-ring accent-gradient"></span>
+                                <span class="card-label-content">Ver — <em class="font-display">Tours Astronómicos</em></span>
+                            </span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= EVENTOS ================= -->
+        <section id="eventos">
+            <div class="container">
+                <div class="section-header eventos-header">
+                    <div class="eyebrow-row">
+                        <span class="eyebrow-line"></span>
+                        <span class="eyebrow-label">Eventos</span>
+                    </div>
+                    <div class="section-header-row">
+                        <h2 class="section-title">Eventos <em class="font-display text-gold">nocturnos</em></h2>
+                        <a href="experiencias.html" class="btn-view-all">
+                            <span class="btn-ring accent-gradient"></span>
+                            <span class="btn-content">Ver todos →</span>
+                        </a>
+                    </div>
+                    <p class="section-subtext">Actividades programadas según el horario oficial de Colombia (COT / UTC-5).</p>
+                </div>
+
+                <div class="eventos-list">
+                    <a href="#contacto" class="evento-entry">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeQyK-LIkpEmG-H6E3ta5Aa5XNDs6QXtsDWND4Aq_L1fUcHOwbyoklOCw&s=10" alt="Noches de Luna Nueva" class="evento-thumb">
+                        <div class="evento-info">
+                            <h3 class="evento-title">Noches de Luna Nueva</h3>
+                            <p class="evento-desc">Observación de galaxias lejanas, nebulosas y cúmulos estelares de alta profundidad.</p>
+                        </div>
+                        <div class="evento-meta">
+                            <span class="evento-time">20:00 – 23:30</span>
+                            <span class="evento-date">Hora Colombia</span>
+                        </div>
+                        <span class="evento-arrow">→</span>
+                    </a>
+
+                    <a href="#contacto" class="evento-entry">
+                        <img src="https://media.tacdn.com/media/attractions-splice-spp-674x446/0b/17/4e/a0.jpg" alt="Astrofotografía Guiada" class="evento-thumb">
+                        <div class="evento-info">
+                            <h3 class="evento-title">Astrofotografía Guiada</h3>
+                            <p class="evento-desc">Talleres semanales para capturar la Vía Láctea con tu cámara o smartphone.</p>
+                        </div>
+                        <div class="evento-meta">
+                            <span class="evento-time">21:00 – 23:00</span>
+                            <span class="evento-date">Hora Colombia</span>
+                        </div>
+                        <span class="evento-arrow">→</span>
+                    </a>
+
+                    <a href="#contacto" class="evento-entry">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTc11_dKTti_gygZOY0lVYqXwplxlBAUp4A1puuVn0C5Q&s=10" alt="Cenas Bajo las Estrellas" class="evento-thumb">
+                        <div class="evento-info">
+                            <h3 class="evento-title">Cenas Bajo las Estrellas</h3>
+                            <p class="evento-desc">Menús degustación temáticos maridados con vinos selectos en la terraza abierta.</p>
+                        </div>
+                        <div class="evento-meta">
+                            <span class="evento-time">19:30 – 22:00</span>
+                            <span class="evento-date">Hora Colombia</span>
+                        </div>
+                        <span class="evento-arrow">→</span>
+                    </a>
+
+                    <a href="#contacto" class="evento-entry">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTst_OkWed3lXaNGlF3sxEl2WGaXsHSKjw012EipjsVXLXgydAMH1CAz3Q&s=10" alt="Bodas y Eventos Celestiales" class="evento-thumb">
+                        <div class="evento-info">
+                            <h3 class="evento-title">Bodas y Eventos Celestiales</h3>
+                            <p class="evento-desc">Celebraciones exclusivas con ambientación espacial y cenas privadas bajo las estrellas.</p>
+                        </div>
+                        <div class="evento-meta">
+                            <span class="evento-time">Cotización</span>
+                            <span class="evento-date">Personalizada</span>
+                        </div>
+                        <span class="evento-arrow">→</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= GALERÍA ================= -->
+        <section id="galeria">
+            <div class="galeria-content parallax-center">
+                <p class="eyebrow">Galería</p>
+                <h2 class="section-title">Visual <em class="font-display text-gold">estelar</em></h2>
+                <p class="section-subtext">Doce experiencias visuales que te permiten imaginar tu estancia bajo el manto estrellado.</p>
+                <a href="galeria.html" class="btn-outline btn-sm">
+                    <span class="btn-ring accent-gradient"></span>
+                    <span class="btn-content">Ver Galería</span>
+                </a>
+            </div>
+
+            <div class="parallax-cols">
+                <div class="parallax-col parallax-col-1">
+                    <div class="parallax-card" data-index="0" style="transform: rotate(-3deg);">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeQyK-LIkpEmG-H6E3ta5Aa5XNDs6QXtsDWND4Aq_L1fUcHOwbyoklOCw&s=10" alt="Terraza Observatorio">
+                        <span class="parallax-card-label">Terraza Observatorio</span>
+                    </div>
+                    <div class="parallax-card" data-index="1" style="transform: rotate(2deg);">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAEZ910METY4TxBxUEAn4qpecTHz0YdsPScCkxqAQODQ&s" alt="Suites Observatorio">
+                        <span class="parallax-card-label">Suites Observatorio</span>
+                    </div>
+                    <div class="parallax-card" data-index="2" style="transform: rotate(-2deg);">
+                        <img src="https://media.tacdn.com/media/attractions-splice-spp-674x446/0b/17/4e/a0.jpg" alt="Tours Astronómicos">
+                        <span class="parallax-card-label">Tours Astronómicos</span>
+                    </div>
+                </div>
+                <div class="parallax-col parallax-col-2">
+                    <div class="parallax-card" data-index="3" style="transform: rotate(3deg);">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTc11_dKTti_gygZOY0lVYqXwplxlBAUp4A1puuVn0C5Q&s=10" alt="Restaurante y Bar Constelación">
+                        <span class="parallax-card-label">Bar & Restaurante Constelación</span>
+                    </div>
+                    <div class="parallax-card" data-index="4" style="transform: rotate(-3deg);">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRo_-tANFW16oAkqneIvwiqYmmwdnLMlo0hlCwxuI7TBA&s=10" alt="Spa y Ritual Nocturno">
+                        <span class="parallax-card-label">Spa & Ritual Nocturno</span>
+                    </div>
+                    <div class="parallax-card" data-index="5" style="transform: rotate(2deg);">
+                        <img src="https://media-cdn.tripadvisor.com/media/photo-s/2a/c9/99/53/caption.jpg" alt="Hotel Polaris de noche">
+                        <span class="parallax-card-label">Hotel Polaris</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="lightbox" id="lightbox">
+                <button class="lightbox-close" id="lightbox-close" aria-label="Cerrar">✕</button>
+                <img src="" alt="" id="lightbox-img">
+                <p class="lightbox-caption" id="lightbox-caption"></p>
+            </div>
+        </section>
+
+        <!-- ================= STATS ================= -->
+        <section id="stats">
+            <div class="container">
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="12" data-suffix="+">0</span>
+                        <span class="stat-label">Suites Observatorio</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="40" data-suffix="+">0</span>
+                        <span class="stat-label">Telescopios Profesionales</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="98" data-suffix="%">0</span>
+                        <span class="stat-label">Huéspedes Satisfechos</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= CONTACTO / FOOTER ================= -->
+        <footer id="contacto">
+            <video id="footer-video" autoplay muted loop playsinline></video>
+            <div class="contact-overlay"></div>
+
+            <div class="marquee-wrap">
+                <div class="marquee" id="marquee"></div>
+            </div>
+
+            <div class="contact-content">
+                <p class="eyebrow">Reservas</p>
+                <h2 class="contact-title">Guía tu próxima experiencia <em class="font-display text-gold">bajo las estrellas</em></h2>
+                <p class="section-subtext">Estamos listos para acompañarte. Escribe al equipo de Hotel Polaris y reserva tu estancia.</p>
+                <a href="mailto:reservas@hotelpolaris.com" class="btn-solid btn-lg">
+                    <span class="btn-ring accent-gradient"></span>
+                    <span class="btn-content">reservas@hotelpolaris.com ↗</span>
+                </a>
+            </div>
+
+            <div class="footer-bar">
+                <div class="footer-social">
+                    <a href="#" aria-label="Instagram">Instagram</a>
+                    <a href="#" aria-label="Facebook">Facebook</a>
+                    <a href="#" aria-label="TripAdvisor">TripAdvisor</a>
+                    <a href="#" aria-label="WhatsApp">WhatsApp</a>
+                </div>
+                <div class="footer-status">
+                    <span class="status-dot"></span>
+                    <span>Aceptando reservas</span>
+                </div>
+                <div class="footer-copy">© 2026 Hotel Polaris. Todos los derechos reservados.</div>
+            </div>
+        </footer>
+
+    </main>
+
+    <script type="module" src="main.js"></script>
+</body>
+</html>

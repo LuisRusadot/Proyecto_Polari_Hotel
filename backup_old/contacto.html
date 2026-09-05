@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Polaris - Contacto</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container nav-container">
+            <a href="index.html" class="brand">
+                <img src="img/logo.png" alt="Logo Hotel Polaris" class="logo-img">
+                <span class="brand-title">Hotel Polaris</span>
+            </a>
+            <nav class="navbar">
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">Inicio</a></li>
+                    <li><a href="nosotros.html" class="nav-link">Nosotros</a></li>
+                    <li><a href="servicios.html" class="nav-link">Servicios</a></li>
+                    <li><a href="galeria.html" class="nav-link">Galería</a></li>
+                    <li><a href="recomendaciones.html" class="nav-link">Recomendaciones</a></li>
+                    <li><a href="contacto.html" class="nav-link active">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container page-content">
+        <section class="section-block text-center">
+            <h1 class="page-title">Ponte en Contacto</h1>
+            <p class="section-desc">Estamos listos para guiar tu próxima experiencia bajo las estrellas.</p>
+        </section>
+
+        <section class="contact-grid section-block">
+
+            <div class="contact-card">
+                <h2 class="card-title">Envíanos un mensaje</h2>
+                <form action="#" method="POST" class="contact-form">
+                    
+                    <div class="form-group">
+                        <label for="nombre">Nombre Completo</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Ej. Ana María Gómez" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Correo Electrónico</label>
+                        <input type="email" id="email" name="email" placeholder="ejemplo@correo.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="telefono">Teléfono de Contacto</label>
+                        <input type="tel" id="telefono" name="telefono" placeholder="+57 300 000 0000">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="asunto">Tipo de Consulta</label>
+                        <select id="asunto" name="asunto" required>
+                            <option value="" disabled selected>Selecciona una opción</option>
+                            <option value="reserva">Reserva de Habitaciones</option>
+                            <option value="astronomia">Tours y Observatorio</option>
+                            <option value="eventos">Eventos y Bodas</option>
+                            <option value="otro">Otras Consultas</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="mensaje">Mensaje</label>
+                        <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe aquí tu consulta o requerimiento especial..." required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn-submit">Enviar Mensaje</button>
+                </form>
+            </div>
+
+            <div class="contact-card info-card">
+                <h2 class="card-title">Información de Atención</h2>
+                
+                <div class="info-item">
+                    <h3>Ubicación</h3>
+                    <p>Camino a la Montaña Estelar Km 12, Zona del Observatorio</p>
+                </div>
+
+                <div class="info-item">
+                    <h3>Teléfonos y Recepción</h3>
+                    <p>Atención 24/7: +57 (604) 555-0199</p>
+                    <p>WhatsApp Reservas: +57 310 000 9988</p>
+                </div>
+
+                <div class="info-item">
+                    <h3>Correo Electrónico</h3>
+                    <p>reservas@hotelpolaris.com</p>
+                    <p>info@hotelpolaris.com</p>
+                </div>
+
+                <div class="info-item">
+                    <h3>Horarios de Astroturismo (Hora Colombia - COT)</h3>
+                    <p>Observatorio Abierto: 7:00 PM - 2:00 AM</p>
+                    <p>Tours Guiados: Salidas a las 8:30 PM y 10:30 PM</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <h3>Hotel Polaris</h3>
+                <p>Tu Próximo Destino</p>
+            </div>
+            <div class="footer-links">
+                <a href="index.html">Inicio</a>
+                <a href="nosotros.html">Nosotros</a>
+                <a href="servicios.html">Servicios</a>
+                <a href="galeria.html">Galería</a>
+                <a href="recomendaciones.html">Recomendaciones</a>
+                <a href="contacto.html">Contacto</a>
+            </div>
+            <div class="footer-copy">
+                <p>&copy; 2026 Hotel Polaris. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
