@@ -8,6 +8,7 @@ import { initExperiencias } from "./experiencias.js";
 import { initEventos } from "./eventos.js";
 import { initGaleria } from "./galeria.js";
 import { initContacto } from "./contacto.js";
+import { initContactoApi } from "./contacto-api.js";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -46,6 +47,10 @@ if (esSubpagina) {
     initPage();
     if (document.getElementById("carruselTrack")) {
         initCarrusel();
+    }
+    // Si estamos en la subpágina de contacto, conectar el formulario con la API
+    if (document.getElementById("contact-form")) {
+        initContactoApi();
     }
 } else {
     // Landing page: esperar a que termine la pantalla de carga
