@@ -1,6 +1,10 @@
 const WORDS = ["Lujo", "Estrellas", "Descanso", "Aventura"];
 const DURATION = 2700; // ms
 const WORD_INTERVAL = 900; // ms
+// Máximo de tiempo total (ms) antes de forzar la salida de la pantalla de
+// carga, aunque requestAnimationFrame esté congelado (pestaña en segundo
+// plano, "reducir movimiento", navegador estricto con file://, etc.)
+const MAX_ESPERA = 4500;
 
 export function initLoading() {
     const counterEl = document.getElementById("loading-counter");
@@ -13,6 +17,17 @@ export function initLoading() {
 
     let count = 0;
     let startTime = null;
+    let completado = false;
+
+    function completar() {
+        if (completado) return;
+        completado = true;
+        document.dispatchEvent(new CustomEvent("loading:complete"));
+    }
+
+    // Fusible: la pantalla de carga SIEMPRE se cierra, incluso si el
+    // navegador no dispara requestAnimationFrame correctamente.
+    setTimeout(completar, MAX_ESPERA);
 
     function tick(now) {
         if (startTime === null) startTime = now;
@@ -25,9 +40,7 @@ export function initLoading() {
         if (count < 100) {
             requestAnimationFrame(tick);
         } else {
-            setTimeout(() => {
-                document.dispatchEvent(new CustomEvent("loading:complete"));
-            }, 400);
+            setTimeout(completar, 400);
         }
     }
 

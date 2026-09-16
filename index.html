@@ -314,5 +314,24 @@
     </main>
 
     <script type="module" src="main.js"></script>
+    <!-- Fusible anti-loader-pegado: este script NO es módulo y no depende de
+         ningún CDN. Si después de 5.5s la pantalla de carga sigue visible
+         (CDN bloqueado, internet lento, error de módulo), la fuerza a salir. -->
+    <script>
+        (function () {
+            function forzarSalida() {
+                var loading = document.getElementById("loading-screen");
+                if (loading) loading.style.display = "none";
+                var app = document.getElementById("app");
+                if (app) app.removeAttribute("hidden");
+            }
+            setTimeout(forzarSalida, 5500);
+            // Si el documento entero ya cargó y el loading sigue ahí a los 2s
+            // extra, lo quitamos igual (cubre navegadores que pausan rAF).
+            window.addEventListener("load", function () {
+                setTimeout(forzarSalida, 2000);
+            });
+        })();
+    </script>
 </body>
 </html>
